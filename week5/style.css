@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+  background-color: #f7f4ef;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 헤더 */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a:hover {
+  color: #c0603a;
+}
+
+.cart {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* 메인 배너 */
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: linear-gradient(135deg, #e8a87c, #c0603a);
+  color: #fff;
+  text-align: center;
+}
+
+#banner h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #c0603a;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* 상품 목록 */
+#products {
+  width: 1000px;
+  margin: 60px auto;
+}
+
+#products h2 {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-list li {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.product-list img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.product-list strong {
+  display: block;
+  padding: 0 12px;
+  margin-bottom: 5px;
+}
+
+.product-list li span {
+  padding: 0 12px;
+  color: #777;
+}
+
+/* 뱃지 */
+.product-list .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 8px;
+  background-color: #2b7a78;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.product-list .sale {
+  background-color: #e63946;
+}
+
+/* 푸터 */
+.footer {
+  padding: 30px 40px;
+  background-color: #333;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer dl {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer dt {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer dd {
+  margin-right: 20px;
+}
